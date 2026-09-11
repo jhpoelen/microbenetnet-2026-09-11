@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Jorrit Poelen (UC Santa Barbara Cheadle Center, Ronin Institute)">
+  <meta name="dcterms.date" content="2026-09-11">
+  <title>MicrobeNetNet - Connecting Datasets/Nodes/Networks Across Disciplinary Siloes</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/theme/serif.css" id="theme">
+  <style>
+  .slides {
+      font-size: 0.75em;
+  }
+  .reveal ul {
+      display: block;
+  }
+  .reveal ol {
+      display: block;
+  }
+
+  img {
+      max-height: 350px !important;
+  }
+
+  figcaption {
+      font-size: 0.6em !important;
+      font-style: italic !important;
+  }
+
+  .subtitle {
+      font-style: italic !important;
+  }
+
+  .date {
+      font-size: 0.75em !important;
+  }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">MicrobeNetNet - Connecting Datasets/Nodes/Networks
+Across Disciplinary Siloes</h1>
+  <p class="subtitle">as reflected in data connections</p>
+  <p class="author">Jorrit Poelen (UC Santa Barbara Cheadle Center,
+Ronin Institute)</p>
+  <p class="date">2026-09-11</p>
+</section>
+
+<section id="guiding-questions" class="slide level2">
+<h2>Guiding Questions</h2>
+<h3 id="hey-are-we-unsiloed-yet">Hey, are we unsiloed yet?</h3>
+<h3 id="do-you-have-examples-of-unsilo-ing">Do <em>you</em> have
+examples of unsilo-ing?</h3>
+<h3 id="how-do-you-think-we-should-unsilo">How do <em>you</em> think we
+should unsilo?</h3>
+</section>
+<section id="bens-challenge-to-jorrit" class="slide level2">
+<h2>Ben’s Challenge to Jorrit</h2>
+<blockquote>
+<p>[…] New Datasets/Nodes/Networks that might be connected (Jorrit)</p>
+<ol type="1">
+<li><p>What data are there (plain language summaries)?</p></li>
+<li><p>How can people access what are there?</p></li>
+<li><p>Case study, Review example of FRED and MaarjAM networks - how you
+found the data, wed them. Generalizable for other efforts? […] <a
+href="#/fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></p></li>
+</ol>
+</blockquote>
+</section>
+<section
+id="are-we-unsiloed-yet-revisiting-mnn-theme-and-grand-challenge."
+class="slide level2">
+<h2>Are we unsiloed yet? Revisiting MN^N Theme and Grand Challenge.</h2>
+<blockquote>
+<p>[…] MICROBENet^Net <a href="#/fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a>[1] Theme and Grand Challenge: Plants
+and microorganisms regulate a diverse array of processes that modulate
+the Earth system. Yet, we know remarkably little about how variable
+plant-microbial interactions are across the globe, how microbial
+connections with plants respond to global change, and if changes in
+plant-microbe interactions will lead to predictable changes in plant,
+ecosystem, and macro-scale ecology. While microbial ecologists and plant
+ecologists both explore questions about geography, interactions, and
+function, this work has often occurred in plant or microbial silos.
+<strong>Focusing on either plants or microbes resulted in the
+development of distinct disciplinary vocabularies and meanings, even
+when using similar tools and asking questions across similar
+scales.</strong> […]</p>
+</blockquote>
+</section>
+<section id="are-we-unsiloed-yet-a-plain-language-nsf-update"
+class="slide level2">
+<h2>Are we unsiloed yet? A “Plain Language” (NSF) Update</h2>
+<blockquote>
+<p>Since the inaugural MicrobeNetNet ([1], MN^N) colloquium in
+Knoxville, TN 2025-03-20/2025-03-24 [2], Jorrit Poelen has collaborated
+with many MN^N participants and nodes to use existing methods [3,4] to
+review and integrate existing datasets, databases, and collections
+describing plant-microbe interactions into the openly accessible and
+citable MicrobeNetNet Data Review Corpus [5,6]. The <strong>2026-08-14
+version of the MN^N Review Corpus is a global dataset containing over 7
+million claims sourced from MycoPortal (a data portal of a consortium of
+Mycology Collections), USDA United States National Fungus Collections
+Fungus-Host Dataset, Microbial Atlas of Predicted Species (MAPS),
+AusTrait, Fine Root Ecology Database (FRED), MaarjAM, FungalTraits,
+FunFun, Global(AM)Fungi, International Collection of Microorganisms from
+Plants (ICMP), MycoDB, USDA ARS Culture Collection (NRRL), and Unite and
+more.</strong> […] We expect to continue to integrate existing datasets
+[…], but also improve the data infrastructures [7] that help keep this
+openly data accessible. <a href="#/fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></p>
+</blockquote>
+</section>
+<section id="are-we-unsiloed-yet-mnn-2025-colloquium-in-knoxville-tn."
+class="slide level2">
+<h2>Are we unsiloed yet? MN^N 2025 Colloquium in Knoxville, TN.</h2>
+<p><img data-src="img/MNN-group-photo-colloquium-2025.jpeg"
+style="height:75.0%"
+alt="Among many others, FRED and MaarjAM meet in Knoxville, TN in 2025" />
+<a href="#/fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a>.</p>
+</section>
+<section
+id="are-we-unsiloed-yet-mnn-2025-colloquium-in-knoxville-tn.-fred-and-maarjam-meet."
+class="slide level2">
+<h2>Are we unsiloed yet? MN^N 2025 Colloquium in Knoxville, TN. FRED and
+MaarjAM meet.</h2>
+<p><img data-src="img/MNN-group-photo-colloquium-2025-marked.jpeg"
+style="height:75.0%"
+alt="Among many others, FRED and MaarjAM meet in Knoxville, TN in 2025" />
+<a href="#/fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a>.</p>
+</section>
+<section id="are-we-unsiloed-yet-fred-and-maarjam" class="slide level2">
+<h2>Are we unsiloed yet? FRED and MaarjAM</h2>
+<ul>
+<li>FRED/MaarjAM met in person and data (csv, xslx-&gt;csv) was shared
+in person</li>
+<li>FRED/MaarjAM data openly published
+<ul>
+<li><a
+href="https://github.com/globalbioticinteractions/fred">https://github.com/globalbioticinteractions/fred</a></li>
+<li><a
+href="https://github.com/globalbioticinteractions/maarjam">https://github.com/globalbioticinteractions/maarjam</a></li>
+</ul></li>
+<li>GloBI integration tools used to connect FRED/MaarjAM via plant
+taxonomic names (World of Flora Online)</li>
+<li>Early applications include GloBI Data Reviews and Plant Overlap
+Analysis.
+<ul>
+<li><a href="https://doi.org/10.5281/zenodo.20547776">Elton, Nomer,
+&amp; Preston. (2026). Versioned Archive and Review of Biotic
+Interactions and Taxon Names Found within globalbioticinteractions/fred
+hash://md5/6db551793883f575d828d8a600e1af72. Zenodo.
+https://doi.org/10.5281/zenodo.20547776</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.20548434">Elton, Nomer,
+&amp; Preston. (2026). Versioned Archive and Review of Biotic
+Interactions and Taxon Names Found within
+globalbioticinteractions/maarjam
+hash://md5/4578fcd83fceba1f11c269d8aaf1118a. Zenodo.
+https://doi.org/10.5281/zenodo.20548434</a></li>
+<li><a
+href="https://github.com/jhpoelen/fungal-plant-host-overlap/tree/0faeeeae123b5d8f53576feb1d607ffb5d2bd3ac">https://github.com/jhpoelen/fungal-plant-host-overlap/tree/0faeeeae123b5d8f53576feb1d607ffb5d2bd3ac</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="are-we-unsiloed-yet-mnˆn-dataset-review-corpus"
+class="slide level2">
+<h2>Are we unsiloed yet? MNˆN Dataset Review Corpus</h2>
+<p><img data-src="img/MNN-Review-Corpus-On-Zenodo-2026-09-11.png"
+alt="Screenshot of MN^N Dataset Review Corpus https://doi.org/10.5281/zenodo.21940611 Zenodo Webpage accessed at 2026-09-11" />
+<a href="#/fn6" class="footnote-ref" id="fnref6"
+role="doc-noteref"><sup>6</sup></a></p>
+</section>
+<section id="are-we-unsiloed-yet-mnˆn-dataset-review-corpus-1"
+class="slide level2">
+<h2>Are we unsiloed yet? MNˆN Dataset Review Corpus</h2>
+<pre><code>(You or Your Colleagues)
+ -[:curate]-&gt;
+  (Original Data)
+    -[:usedIn]-&gt; 
+       (MNN Data Review)
+          -[:partOf]-&gt; 
+              (MNN Data Review Corpus)
+                -[:usedBy]-&gt;
+                   (... everyone?)</code></pre>
+</section>
+<section id="are-we-unsiloed-yet-example-use." class="slide level2">
+<h2>Are we unsiloed yet? Example use.</h2>
+<figure>
+<img data-src="img/MNN-slack-exchange-2026-07-27.png"
+style="height:75.0%"
+alt="MN^N Slack Exchange in #tracking-databases channel on 2026-07-27 as accessed at https://app.slack.com/client/T068C6GQ1MW/C0AH89QFH9T on 2026-09-11" />
+<figcaption aria-hidden="true">MN^N Slack Exchange in
+#tracking-databases channel on 2026-07-27 as accessed at
+https://app.slack.com/client/T068C6GQ1MW/C0AH89QFH9T on
+2026-09-11</figcaption>
+</figure>
+</section>
+<section id="guiding-questions-1" class="slide level2">
+<h2>Guiding Questions</h2>
+<h3 id="hey-are-we-unsiloed-yet-1">Hey, are we unsiloed yet?</h3>
+<h3 id="do-you-have-examples-of-unsilo-ing-1">Do <em>you</em> have
+examples of unsilo-ing?</h3>
+<h3 id="how-do-you-think-we-should-unsilo-1">How do <em>you</em> think
+we should unsilo?</h3>
+</section>
+<section id="references" class="slide level2">
+<h2>References</h2>
+<p>[1] Sikes, B.A., Zanne E.A., Classen, A.T, Kivlin S.N. (2024)
+MICROBENet-Net: Multi-Institute Collaborative Research on BElowground
+plant-microbial interactions Network of Networks. 2024/2028 NSF AccelNet
+Award 2412561 https://microbenetwork.net/
+https://globalbioticinteractions.org/microbenetnet</p>
+<p>[2] Sikes, B., Classen, A., Kivlin, S., Zanne, A.&amp; Holly Andres.
+(2025, May 29). 2025 MicrobeNet^Net Colloquium. Zenodo. 2025
+MicrobeNet^Net Colloquium, Knoxville, TN.
+https://doi.org/10.5281/zenodo.15547951</p>
+<p>[3] Jorrit H. Poelen, James D. Simons and Chris J. Mungall. (2014).
+Global Biotic Interactions: An open infrastructure to share and analyze
+species-interaction datasets. Ecological Informatics.
+https://doi.org/10.1016/j.ecoinf.2014.08.005.</p>
+<p>[4] Elliott M.J., Poelen, J.H. &amp; Fortes, J.A.B. (2023) Signing
+data citations enables data verification and citation persistence. Sci
+Data. https://doi.org/10.1038/s41597-023-02230-y
+hash://sha256/f849c870565f608899f183ca261365dce9c9f1c5441b1c779e0db49df9c2a19d</p>
+<p>[5] Poelen, J. H. (2026, Feb). MicrobeNetNet Dataset Review Corpus
+and Associated Data Products hash://md5/5981a37a16c25204dc18d9188f185b19
+hash://sha256/7448991edd5f79db02519a5b3d4691c50a60c02f45d40f087402a7a492da3a3e
+[Data set]. Zenodo. https://doi.org/10.5281/zenodo.18793975</p>
+<p>[6] Poelen, J. H. (2026). MicrobeNetNet Dataset Review Corpus and
+Associated Data Products hash://md5/5981a37a16c25204dc18d9188f185b19
+hash://sha256/7448991edd5f79db02519a5b3d4691c50a60c02f45d40f087402a7a492da3a3e
+[Dataset]. Zenodo. https://doi.org/10.5281/zenodo.21940611</p>
+<p>[7] Poelen, J. H. (2026) Data Dryad Feature Request: retrieve content
+by hash / checksum. GitHub. See also
+https://github.com/datadryad/dryad-app/pull/3107
+https://github.com/datadryad/dryad-product-roadmap/issues/5182</p>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Sikes, B. 2026-09-08. Pers. Comm.<a href="#/fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Sikes, B.A., Zanne E.A., Classen, A.T, Kivlin S.N.
+(2024) MICROBENet-Net: Multi-Institute Collaborative Research on
+BElowground plant-microbial interactions Network of Networks. 2024/2028
+NSF AccelNet Award 2412561 https://microbenetwork.net/
+https://globalbioticinteractions.org/microbenetnet<a href="#/fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Excerpt from Jorrit’s update submitted to Ben for NSF
+report on 2026-08-14<a href="#/fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Sikes, B., Classen, A., Kivlin, S., Zanne, A.&amp; Holly
+Andres. (2025, May 29). 2025 MicrobeNet^Net Colloquium. Zenodo. 2025
+MicrobeNet^Net Colloquium, Knoxville, TN.
+https://doi.org/10.5281/zenodo.15547951<a href="#/fnref4"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Sikes, B., Classen, A., Kivlin, S., Zanne, A.&amp; Holly
+Andres. (2025, May 29). 2025 MicrobeNet^Net Colloquium. Zenodo. 2025
+MicrobeNet^Net Colloquium, Knoxville, TN.
+https://doi.org/10.5281/zenodo.15547951<a href="#/fnref5"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Poelen, J. H. (2026). MicrobeNetNet Dataset Review
+Corpus and Associated Data Products
+hash://md5/5981a37a16c25204dc18d9188f185b19
+hash://sha256/7448991edd5f79db02519a5b3d4691c50a60c02f45d40f087402a7a492da3a3e
+[Dataset]. Zenodo. https://doi.org/10.5281/zenodo.21940611<a
+href="#/fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
