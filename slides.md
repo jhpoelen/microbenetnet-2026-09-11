@@ -7,6 +7,11 @@ date: 2026-09-11
 aspectratio: 169
 ---
 
+![](https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/license_badges/big/by.svg)
+
+[https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+
+
 ## Guiding Questions
 
 ### Hey, are we unsiloed yet?
