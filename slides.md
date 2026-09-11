@@ -1,7 +1,7 @@
 ---
 author:
   - Jorrit Poelen (UC Santa Barbara Cheadle Center, Ronin Institute)
-title: "MicrobeNetNet - Connecting Datasets/Nodes/Networks Across Disciplinary Siloes"
+title: "MicrobeNetNet - Connecting Datasets/Nodes/Networks Across Disciplinary Silos"
 subtitle: "as reflected in data connections"
 date: 2026-09-11
 aspectratio: 169
